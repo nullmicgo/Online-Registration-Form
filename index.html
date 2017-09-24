@@ -12,14 +12,17 @@
             <h1>the code review</h1>
          </div>
       </header>
+      <!-- header -->
       <main>
          <section class="intro">
+            <h2>Signup for our newsletter</h2>
             <div class="container">
-               <h1>Signup for our newsletter</h1>
                <p>Get the latest new on how your code is doing right in your inbox.</p>
                <hr>
             </div>
+            <!-- container -->
          </section>
+         <!-- intro -->
          <div class="container">
             <form id="contact_form" class="" action="#" method="POST">
                <fieldset>
@@ -27,7 +30,7 @@
                      <h1>Contact Information</h1>
                   </legend>
                   <label for="full_name">Full Name</label>
-                  <input type="text" placeholder="Required" id="user_full_name" id="full_name">
+                  <input type="text" placeholder="Required" name="user_full_name" id="full_name">
                   <span>Please input correct full name</span>
                   <br>
                   <label for="email_address">Email Address</label>
@@ -35,7 +38,7 @@
                   <span>Please input correct email address</span>
                   <br>
                   <label for="phone_number">Phone Number</label>
-                  <input type="telephone"  name="user_phone_number" id="phone_number" >
+                  <input type="tel"  name="user_phone_number" id="phone_number" >
                   <span>Please input correct phone number</span>
                   <br>
                   <label for="street_address">Street Address</label>
@@ -49,12 +52,18 @@
                   <label for="state">State</label>
                   <select name="user_state" id="state" >
                      <option value="" disabled selected>Choose State</option>
-                     <option value="Alabama">Alabama</option>
-                     <option value="Arkansas">Arkansas</option>
-                     <option value="Colorado">Colorado</option>
-                     <option value="Kentucky">Kentucky</option>
-                     <option value="Tennessee">Tennessee</option>
-                     <option value="Washington">Washington</option>
+                     <optgroup label="USA">
+                        <option value="Alabama">Alabama</option>
+                        <option value="Arkansas">Arkansas</option>
+                        <option value="Colorado">Colorado</option>
+                        <option value="Kentucky">Kentucky</option>
+                        <option value="Tennessee">Tennessee</option>
+                        <option value="Washington">Washington</option>
+                     </optgroup>
+                     <optgroup label="Hong Kong">
+                        <option value="central_and_western">Central and Western</option>
+                        <option value="eastern">eastern</option>
+                     </optgroup>
                   </select>
                   <span>Please input State</span>
                   <br>
@@ -63,30 +72,36 @@
                   <span>Please input zip code</span>
                   <hr>
                </fieldset>
+               <!-- fieldset -->
                <fieldset>
                   <legend>
                      <h1>Newsletter</h1>
                   </legend>
-                  <label for="subscript_news">Select the newsletter you would like to receive</label><br>               
-                  <input type="checkbox" name="subscript_news" value="html_news" id="user_html_news"><label for="user_html_news">HTML News</label><br>
-                  <input type="checkbox" name="subscript_news" value="css_news" id="user_css_news"><label for="user_css_news">CSS News</label><br>
-                  <input type="checkbox" name="subscript_news" value="javascript_news" id="user_javascript_news"><label for="user_javascript_news">Javascript News</label><br>
+                  <label>Select the newsletter you would like to receive</label><br>               
+                  <input type="checkbox" value="html_news" id="user_html_news"><label for="user_html_news">HTML News</label><br>
+                  <input type="checkbox" value="css_news" id="user_css_news"><label for="user_css_news">CSS News</label><br>
+                  <input type="checkbox" value="javascript_news" id="user_javascript_news"><label for="user_javascript_news">Javascript News</label><br>
                   <br>
-                  <label for="newsletter_format">Newsletter format</label><br>
+                  <label>Newsletter format</label><br>
                   <input type="radio" name="newsletter_format" value="user_html" id="html"><label for="html">HTML</label><br>
                   <input type="radio" name="newsletter_format" value="user_plain_text" id="plain_text"><label for="plain_text">Plain text</label><br>
                   <br>
                   <label for="other_topic">Other topics you'd like to hear about</label><br>
                   <textarea name="user_other_topic" id="other_topic"></textarea>
                </fieldset>
+               <!-- fieldset -->
                <button type="submit">Sign Up</button>
             </form>
+            <!-- form -->
          </div>
+         <!-- container -->
          <footer>
             <div class="container">
                Copyright The Code Review
             </div>
+            <!-- container -->
          </footer>
+         <!-- footer -->
       </main>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script src="js/app.js"></script>
