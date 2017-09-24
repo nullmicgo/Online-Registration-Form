@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign Up For our News Letter</title>
+	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<h1>the code review</h1>
+	</header>
+	<main>
+		<h1>Signup for our newsletter</h1>
+		<p>Get the latest new on how your code is doing right in your inbox.</p>
+		<hr>
+		<hr>
+		<div class="container">
+			<form id="contact_form" class="" action="#" method="POST">
+
+				<fieldset>
+					<legend><h1>Contact Information</h1></legend>
+					<label for="full_name">Full Name</label>
+					<input type="text" placeholder="required" name="full_name">
+					<span>Please input correct full name</span>
+
+					<label for="email_address">Email Address</label>
+					<input type="email" placeholder="required" name="email_address">
+					<span>Please input correct email address</span>
+
+
+					<label for="phone_number">Phone Number</label>
+					<input type="telephone"  name="phone_number">
+					<span>Please input correct phone number</span>
+
+					<label for="street_address">Street Address</label>
+					<input type="text"  name="street_address">
+					<span>Please input correct street address</span>
+
+					<label for="street_address">City</label>
+					<input type="text" name="city">
+					<span>Please input correct city</span>
+
+					<label for="state">State</label>
+					<select name="state">
+						<option value="Alabama">Alabama</option>
+						<option value="Arkansas">Arkansas</option>
+						<option value="Colorado">Colorado</option>
+						<option value="Kentucky">Kentucky</option>
+						<option value="Tennessee">Tennessee</option>
+						<option value="Washington">Washington</option>
+					</select>
+					<span>Please input State</span>
+
+					<label for="zip_code">Zip Code</label>
+					<input type="text" name="zip_code">
+					<span>Please input zip code</span>
+				</fieldset>
+
+				
+
+				<fieldset>
+
+					<legend><h1>Newsletter</h1></legend>
+					<label for="subscript_news">Select the newsletter you would like to receive</label>
+					<input type="checkbox" name="subscript_news" value="html_news"><label>HTML News</label>
+					<input type="checkbox" name="subscript_news" value="css_news"><label>CSS News</label>
+					<input type="checkbox" name="subscript_news" value="javascript_news"><label>Javascript News</label>
+
+
+
+					<label for="newsletter_format">Newsletter format</label>
+					<input type="checkbox" name="newsletter_format" value="html"><label>HTML</label>
+					<input type="checkbox" name="newsletter_format" value="plain_text"><label>Plain text</label>
+
+
+					<label for="newsletter_format">Other topics you'd like to hear about</label>
+					<textarea></textarea>
+				</fieldset>
+
+
+					<button type="submit"></button>
+
+			</form>
+		</div>
+
+
+		<footer>
+			Copyright The Code Review
+		</footer>
+	</main>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>
