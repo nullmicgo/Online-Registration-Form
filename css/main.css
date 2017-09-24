@@ -92,7 +92,7 @@ label {
 }
 input[type="text"],
 input[type="email"],
-input[type="telephone"],
+input[type="tel"],
 select,
 textarea {
     background: #eff0f1;
@@ -171,7 +171,7 @@ Media Query
     }
     input[type="text"],
     input[type="email"],
-    input[type="telephone"],
+    input[type="tel"],
     select {
         display: inline-block;
         width: 74%;
