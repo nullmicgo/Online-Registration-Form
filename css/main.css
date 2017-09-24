@@ -140,6 +140,10 @@ footer {
 input[type="chekcbox"] ~ label {
     color: red;
 }
+
+option[value=""]{
+    color:red;
+}
 /*
 ====================================
 Base Layout
