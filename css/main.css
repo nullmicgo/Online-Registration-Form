@@ -1,0 +1,158 @@
+/*
+====================================
+Base Styles
+====================================
+*/
+
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Merriweather', serif;
+    background: #ffffff;
+    color: black;
+}
+.main-nav {
+    background: #2d3945;
+    color: white;
+    text-transform: uppercase;
+    line-height: 150px;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+.main-nav h1 {
+    font-size: 2.7em;
+    padding: 0px;
+    margin: 0px;
+}
+.container {
+    width: 85%;
+    max-width: 768px;
+    margin: 0 auto;
+}
+.intro {
+    text-align: center;
+}
+.intro h1 {
+    font-weight: bold;
+}
+.intro p {
+    color: #aaafb4;
+    font-weight: lighter;
+    font-size: 1.3em;
+    word-wrap: break-word;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 50px;
+    border-bottom: solid 5px black;
+}
+.intro p + hr {
+    margin-top: -15px;
+    border: solid 1px;
+}
+.footer .container {
+    text-align: center;
+}
+fieldset {
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+legend h1 {
+    line-height: 100px;
+}
+/* webkit solution */
+
+::-webkit-input-placeholder {
+    text-align: right;
+    color: #b8bdc0;
+}
+/* mozilla solution */
+
+input:-moz-placeholder {
+    text-align: right;
+    color: #b8bdc0;
+}
+input[placeholder] {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+label {
+    color: #b8bdc0;
+    line-height: 40px;
+    font-weight: lighter;
+}
+input[type="text"],
+input[type="email"],
+input[type="telephone"],
+select,
+textarea {
+    background: #eff0f1;
+    border-radius: 5px;
+    line-height: 50px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-style: none;
+    height: 50px;
+    text-align: left;
+    padding-left: 20px;
+}
+button[type="submit"] {
+    background: #4ebbb5;
+    color: white;
+    border-radius: 5px;
+    width: 100%;
+    height: 50px;
+    border: none;
+}
+option[disabled] {
+    color: #b8bdc0;
+    ;
+}
+option {
+    color: #b8bdc0;
+}
+textarea {
+    height: 200px;
+}
+input:focus,
+textarea:focus {
+    border-color: #2f455a;
+}
+input ~ span {
+    display: none;
+}
+footer {
+    text-align: center;
+    line-height: 100px;
+    color: #b8bdc0;
+    font-size: 0.8em;
+}
+input[type="chekcbox"] ~ label {
+    color: red;
+}
+/*
+====================================
+Base Layout
+====================================
+*/
+/*
+====================================
+Layout Container
+====================================
+*/
+/*
+====================================
+Media Query
+====================================
+*/
+
+@media (min-width: 768px) {
+    .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
