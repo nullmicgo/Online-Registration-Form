@@ -119,7 +119,15 @@ button[type="submit"] {
     width: 100%;
     height: 50px;
     border: none;
+    transition: box-shadow 0.3s ease-in;
 }
+
+button[type="submit"]:focus,
+button[type="submit"]:hover {
+   box-shadow: 0 5px 15px rgba(0,0,0,0.9);
+}
+
+
 option[disabled] {
     color: #b8bdc0;
 }
@@ -129,9 +137,19 @@ option {
 textarea {
     height: 200px;
 }
+
+
+input,
+textarea,
+select{
+    border-bottom: 0em solid #000; /*optional for transition */
+    transition: border-bottom 0.5s ease-out;
+}
+
 input:focus,
-textarea:focus {
-    border-color: #2f455a;
+textarea:focus,
+select:focus {
+    border-bottom: 0.4em solid #000;
 }
 input ~ span {
     display: none;
